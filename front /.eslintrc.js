@@ -11,17 +11,17 @@ module.exports = {
     'airbnb-typescript',
     'prettier',
   ],
-  parser: "@typescript-eslint/parser",
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
     ecmaVersion: 12,
-    sourceType: "module",
+    sourceType: 'module',
     files: ['*.ts', '*.tsx'],
     project: ['./tsconfig.json'],
   },
-  plugins: ["react", "@typescript-eslint", "react-hooks"],
+  plugins: ['react', '@typescript-eslint', 'react-hooks'],
   rules: {
     'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
     'react-hooks/exhaustive-deps': 'warn', // Checks effect dependencies},
@@ -39,5 +39,6 @@ module.exports = {
     'react/button-has-type': [0],
     'jsx-a11y/alt-text': [1],
     'no-console': [2],
+    'react/prop-types': [0],
   },
 }
